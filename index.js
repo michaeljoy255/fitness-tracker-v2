@@ -26,3 +26,39 @@ function dataToClipboard() {
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
+
+// Use this to dynamically create the form elements!
+$(document).ready(function(){
+    var test = "INSERTED TEXT!"; // temp - for testing text insertion
+
+    $("#chest").after(`
+        <h6>Smith Flat Bench Press</h6>
+        ${test}
+        <div class="form-row mb-3">
+            <div class="col-6">
+                <input
+                    type="number"
+                    class="form-control form-control-sm"
+                    placeholder="Weight 110 lbs"
+                    id="chest-1-weight"
+                />
+            </div>
+            <div class="col-3">
+                <input
+                    type="number"
+                    class="form-control form-control-sm"
+                    placeholder="Reps 10"
+                    id="chest-1-reps"
+                />
+            </div>
+            <div class="col-3">
+                <input
+                    type="number"
+                    class="form-control form-control-sm"
+                    placeholder="Sets 4"
+                    id="chest-1-sets"
+                />
+            </div>
+        </div>
+    `);
+});
