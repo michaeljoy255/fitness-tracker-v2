@@ -6,8 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <title>Fitness Tracker</title>
-        
+
         <link rel="shortcut icon" href="favicon.png" />
+        <link rel="stylesheet" href="styles.css" />
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,14 +16,147 @@
             crossorigin="anonymous"
         />
     </head>
-    <body style="background-color: #ebe8dc;">
+    <body>
+        <!--NAVBAR ##########################################################-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                Track Workout - <span id="currentDate"></span>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#chest">Chest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#triceps">Triceps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#back">Back</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biceps">Biceps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shoulders">Shoulders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#legs">Legs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#misc">Miscellanous</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div class="container">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">
-                    Track New Workout - <span id="currentDate"></span>
-                </a>
-            </nav>
-            
+            <form>
+                <!--CHEST ###################################################-->
+                <a class="anchor" id="chest"></a>
+                <h4>Chest</h4>
+                <div class="row">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Atque magni nobis ex, impedit, voluptatem qui voluptatum
+                    quod minima modi unde autem. Tempora aliquid itaque magnam
+                    dolorem, fugiat excepturi dolores aperiam.
+                </div>
+                <!--TRICEPS #################################################-->
+                <a class="anchor" id="triceps"></a>
+                <h4>Triceps</h4>
+                <div class="row">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Atque magni nobis ex, impedit, voluptatem qui voluptatum
+                    quod minima modi unde autem. Tempora aliquid itaque magnam
+                    dolorem, fugiat excepturi dolores aperiam.
+                </div>
+                <!--BACK ####################################################-->
+                <a class="anchor" id="back"></a>
+                <h4>Back</h4>
+                <div class="row">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Atque magni nobis ex, impedit, voluptatem qui voluptatum
+                    quod minima modi unde autem. Tempora aliquid itaque magnam
+                    dolorem, fugiat excepturi dolores aperiam.
+                </div>
+                <!--BICEPS ##################################################-->
+                <a class="anchor" id="biceps"></a>
+                <h4>Biceps</h4>
+                <div class="row">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Atque magni nobis ex, impedit, voluptatem qui voluptatum
+                    quod minima modi unde autem. Tempora aliquid itaque magnam
+                    dolorem, fugiat excepturi dolores aperiam.
+                </div>
+                <!--SHOULDERS ###############################################-->
+                <a class="anchor" id="shoulders"></a>
+                <h4>Shoulders</h4>
+                <div class="row">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Atque magni nobis ex, impedit, voluptatem qui voluptatum
+                    quod minima modi unde autem. Tempora aliquid itaque magnam
+                    dolorem, fugiat excepturi dolores aperiam.
+                </div>
+                <!--LEGS ####################################################-->
+                <a class="anchor" id="legs"></a>
+                <h4>Legs</h4>
+                <div class="row">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Atque magni nobis ex, impedit, voluptatem qui voluptatum
+                    quod minima modi unde autem. Tempora aliquid itaque magnam
+                    dolorem, fugiat excepturi dolores aperiam.
+                </div>
+                <!--MISCELLANOUS ############################################-->
+                <a class="anchor" id="misc"></a>
+                <h4>Misc</h4>
+                <div class="row">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Atque magni nobis ex, impedit, voluptatem qui voluptatum
+                    quod minima modi unde autem. Tempora aliquid itaque magnam
+                    dolorem, fugiat excepturi dolores aperiam.
+                </div>
+            </form>
+
+            <hr />
+            <button
+                class="btn btn-success btn-block"
+                onclick="dataToClipboard()"
+            >
+                Send Data To Clipboard
+            </button>
+
+            <textarea
+                class="form-control mt-2"
+                id="dataResults"
+                rows="10"
+            ></textarea>
+        </div>
+
+        <!--Final Scripts-->
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
         <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
