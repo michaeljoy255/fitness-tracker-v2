@@ -1,5 +1,4 @@
 // DATA ########################################################################
-// Workouts -> {category, exercises} -> {name, weight, reps, sets}
 const workouts = [
     {
         category: "Chest",
@@ -41,7 +40,7 @@ const workouts = [
         exercises: [
             {
                 name: "Tricep Press Machine",
-                weight: 155,
+                weight: 160,
                 reps: 10,
                 sets: 3 
             },
@@ -192,8 +191,8 @@ const misc = [
     "Cooldown",
     "Post-Stretch"
 ];
-// #############################################################################
 
+// FUNCTIONS ###################################################################
 // Returns mm/dd/yyyy date string
 function getCurrentDate() {
     const date = new Date();
@@ -260,7 +259,7 @@ function dataToClipboard() {
     }
 };
 
-// DOCUMENT READY --------------------------------------------------------------
+// Workout form generation
 $(document).ready(function(){
     // Auto-hide navbar menu once is clicked
     $('.navbar-nav>li>a').on('click', function(){
@@ -286,6 +285,8 @@ $(document).ready(function(){
                             type="number"
                             class="form-control form-control-sm"
                             placeholder="Weight ${exercise["weight"]} lbs"
+                            min="1"
+                            max="400"
                             id="${workout["category"].toLocaleLowerCase() + "-" + n + "-weight"}"
                         />
                     </div>
@@ -294,6 +295,8 @@ $(document).ready(function(){
                             type="number"
                             class="form-control form-control-sm"
                             placeholder="Reps ${exercise["reps"]}"
+                            min="1"
+                            max="100"
                             id="${workout["category"].toLocaleLowerCase() + "-" + n + "-reps"}"
                         />
                     </div>
@@ -302,6 +305,8 @@ $(document).ready(function(){
                             type="number"
                             class="form-control form-control-sm"
                             placeholder="Sets ${exercise["sets"]}"
+                            min="1"
+                            max="20"
                             id="${workout["category"].toLocaleLowerCase() + "-" + n + "-sets"}"
                         />
                     </div>
