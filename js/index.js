@@ -33,11 +33,6 @@ const workouts = [
                 reps: 10,
                 sets: 3
             },
-        ]
-    },
-    {
-        category: "Triceps",
-        exercises: [
             {
                 name: "Tricep Press Machine",
                 weight: 160,
@@ -84,12 +79,7 @@ const workouts = [
                 weight: 80,
                 reps: 10,
                 sets: 3
-            }
-        ]
-    },
-    {
-        category: "Biceps",
-        exercises: [
+            },
             {
                 name: "Barbell Underhand Curls",
                 weight: 40,
@@ -111,7 +101,7 @@ const workouts = [
         ]
     },
     {
-        category: "Shoulders",
+        category: "Legs",
         exercises: [
             {
                 name: "Seated Shoulder Press Machine",
@@ -130,12 +120,7 @@ const workouts = [
                 weight: 10,
                 reps: 10,
                 sets: 3
-            }
-        ]
-    },
-    {
-        category: "Legs",
-        exercises: [
+            },
             {
                 name: "Leg Press Machine",
                 weight: 160,
@@ -178,6 +163,24 @@ const workouts = [
                 reps: 10,
                 sets: 3
             },
+            {
+                name: "Abdominal Crunch Machine",
+                weight: 35,
+                reps: 25,
+                sets: 3
+            },
+            {
+                name: "Barbell Standing Core Twist",
+                weight: 50,
+                reps: 50,
+                sets: 2
+            },
+            {
+                name: "Dumbbell Oblique Side Bend",
+                weight: 45,
+                reps: 25,
+                sets: 3
+            },
         ]
     }
 ];
@@ -186,7 +189,6 @@ const workouts = [
 const misc = [
     "Pre-Stretch",
     "Warmup",
-    "Core",
     "Cardio",
     "Cooldown",
     "Post-Stretch"
@@ -230,13 +232,13 @@ function dataToClipboard() {
             data.push(getCompleteDataOnly(weight, reps, sets));
             weight, reps, sets = "";
         });
-        data.push("");
+        // data.push("");
     });
 
     // Add extras
     misc.forEach(extra => {
         checked = document.getElementById(extra.toLocaleLowerCase()).checked;
-        data.push(checked ? "YES" : "");
+        data.push(checked ? "Y" : "");
     });
 
     // Paste formatted data to textarea
@@ -273,7 +275,17 @@ $(document).ready(function(){
         // console.log(workout["category"]);
         $("#workouts").append("<hr />");
         $("#workouts").append("<a class='anchor' id='" + workout["category"].toLocaleLowerCase() + "'></a>");
-        $("#workouts").append("<h4>" + workout["category"] + "</h4>");
+        if (workout["category"] === "Chest") {
+            $("#workouts").append("<h4>Chest & Triceps</h4>");
+        };
+
+        if (workout["category"] === "Back") {
+            $("#workouts").append("<h4>Back & Biceps</h4>");
+        };
+        
+        if (workout["category"] === "Legs") {
+            $("#workouts").append("<h4>Legs, Shoulders, Core</h4>");
+        }
 
         workout["exercises"].forEach((exercise, n) => {
             // console.log(exercise);
