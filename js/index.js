@@ -5,7 +5,7 @@ const workouts = [
         exercises: [
             {
                 name: "Smith Flat Bench Press",
-                weight: 110,
+                weight: 112.5,
                 reps: 10,
                 sets: 4
             },
@@ -23,13 +23,19 @@ const workouts = [
             },
             {
                 name: "Fly Machine (Chest)",
-                weight: 90,
+                weight: 100,
                 reps: 10,
                 sets: 3
             },
             {
                 name: "Cable Chest Side Pulls",
-                weight: 14,
+                weight: 15.5,
+                reps: 10,
+                sets: 3
+            },
+            {
+                name: "Cable Rope Pulldowns",
+                weight: 35,
                 reps: 10,
                 sets: 3
             },
@@ -70,7 +76,7 @@ const workouts = [
             },
             {
                 name: "Assisted Pull-ups (3 versions)",
-                weight: 55,
+                weight: 45,
                 reps: 10,
                 sets: 3
             },
@@ -82,13 +88,13 @@ const workouts = [
             },
             {
                 name: "Barbell Underhand Curls",
-                weight: 40,
+                weight: 50,
                 reps: 10,
                 sets: 3
             },
             {
                 name: "Dumbbell Hammer Curls",
-                weight: 20,
+                weight: 25,
                 reps: 10,
                 sets: 3
             },
@@ -105,7 +111,7 @@ const workouts = [
         exercises: [
             {
                 name: "Seated Shoulder Press Machine",
-                weight: 60,
+                weight: 70,
                 reps: 10,
                 sets: 3
             },
@@ -159,7 +165,7 @@ const workouts = [
             },
             {
                 name: "Standing Glute Press Machine",
-                weight: 100,
+                weight: 110,
                 reps: 10,
                 sets: 3
             },
@@ -167,7 +173,7 @@ const workouts = [
                 name: "Abdominal Crunch Machine",
                 weight: 35,
                 reps: 25,
-                sets: 3
+                sets: 4
             },
             {
                 name: "Barbell Standing Core Twist",
@@ -187,10 +193,7 @@ const workouts = [
 
 // Misc Workout Tasks
 const misc = [
-    "Pre-Stretch",
     "Warmup",
-    "Cardio",
-    "Cooldown",
     "Post-Stretch"
 ];
 
