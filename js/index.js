@@ -4,44 +4,44 @@ const workouts = [
         category: "Chest",
         exercises: [
             {
-                name: "Smith Flat Bench Press",
+                name: "Flat Bench Press",
                 weight: 112.5,
                 reps: 10,
                 sets: 4
             },
             {
-                name: "Smith Incline Bench Press",
+                name: "Incline Bench Press",
                 weight: 70,
                 reps: 10,
                 sets: 4
             },
             {
-                name: "Smith Decline Bench Press",
-                weight: 110,
+                name: "Decline Bench Press",
+                weight: 112.5,
                 reps: 10,
                 sets: 4
             },
             {
                 name: "Fly Machine (Chest)",
-                weight: 100,
+                weight: 110,
                 reps: 10,
                 sets: 3
             },
             {
                 name: "Cable Chest Side Pulls",
-                weight: 15.5,
+                weight: 17.5,
                 reps: 10,
                 sets: 3
             },
             {
                 name: "Cable Rope Pulldowns",
-                weight: 35,
+                weight: 37.5,
                 reps: 10,
                 sets: 3
             },
             {
                 name: "Tricep Press Machine",
-                weight: 160,
+                weight: 170,
                 reps: 10,
                 sets: 3 
             },
@@ -57,26 +57,26 @@ const workouts = [
         category: "Back",
         exercises: [
             {
-                name: "Smith Bent Over Rows",
-                weight: 110,
+                name: "Bent Over Rows",
+                weight: 115,
                 reps: 10,
                 sets: 4 
             },
             {
                 name: "Smith Shrugs",
-                weight: 180,
+                weight: 182.5,
                 reps: 10,
                 sets: 4 
             },
             {
-                name: "Smith Stiff-Legged Deadlifts",
-                weight: 90,
+                name: "Stiff-Leg Deadlifts",
+                weight: 95,
                 reps: 10,
                 sets: 4 
             },
             {
-                name: "Assisted Pull-ups (3 versions)",
-                weight: 45,
+                name: "Assisted Pull-ups (3 grips)",
+                weight: 40,
                 reps: 10,
                 sets: 3
             },
@@ -87,19 +87,19 @@ const workouts = [
                 sets: 3
             },
             {
-                name: "Barbell Underhand Curls",
+                name: "Underhand Curls",
                 weight: 50,
                 reps: 10,
                 sets: 3
             },
             {
-                name: "Dumbbell Hammer Curls",
+                name: "Hammer Curls",
                 weight: 25,
                 reps: 10,
                 sets: 3
             },
             {
-                name: "Barbell Overhand Curls",
+                name: "Overhand Curls",
                 weight: 30,
                 reps: 10,
                 sets: 3
@@ -110,20 +110,20 @@ const workouts = [
         category: "Legs",
         exercises: [
             {
-                name: "Seated Shoulder Press Machine",
-                weight: 70,
-                reps: 10,
-                sets: 3
-            },
-            {
-                name: "Dumbbell Side (Lateral) Raises",
+                name: "Side Raises",
                 weight: 10,
                 reps: 10,
                 sets: 3
             },
             {
-                name: "Dumbbell Front Raises",
+                name: "Front Raises",
                 weight: 10,
+                reps: 10,
+                sets: 3
+            },
+            {
+                name: "Shoulder Press Machine",
+                weight: 50,
                 reps: 10,
                 sets: 3
             },
@@ -134,13 +134,13 @@ const workouts = [
                 sets: 3
             },
             {
-                name: "Leg Curl Machine",
+                name: "Leg Extension Machine",
                 weight: 75,
                 reps: 10,
                 sets: 3
             },
             {
-                name: "Leg Extension Machine",
+                name: "Leg Curl Machine",
                 weight: 75,
                 reps: 10,
                 sets: 3
@@ -164,7 +164,7 @@ const workouts = [
                 sets: 3
             },
             {
-                name: "Standing Glute Press Machine",
+                name: "Standing Glute Machine",
                 weight: 110,
                 reps: 10,
                 sets: 3
@@ -174,12 +174,6 @@ const workouts = [
                 weight: 35,
                 reps: 25,
                 sets: 4
-            },
-            {
-                name: "Barbell Standing Core Twist",
-                weight: 50,
-                reps: 50,
-                sets: 2
             },
             {
                 name: "Dumbbell Oblique Side Bend",
@@ -194,7 +188,7 @@ const workouts = [
 // Misc Workout Tasks
 const misc = [
     "Warmup",
-    "Post-Stretch"
+    "Stretch"
 ];
 
 // FUNCTIONS ###################################################################
